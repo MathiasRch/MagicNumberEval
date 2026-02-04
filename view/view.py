@@ -4,19 +4,26 @@ from common.icontroller import IController
 
 
 class View(IView):
-    # To be completed
+
+    def __init__(self):
+        self._controller: IController = None
+        self._model: IModel = None
 
     def setActionPerformer(self, actionPerformer: IController) -> None:
-        pass
+        self._controller = actionPerformer
 
     def setModel(self, model: IModel) -> None:
-        pass
+        self._model = model
 
-    def setController(self, model: IController) -> None:
-        pass
+    def setController(self, controller: IController) -> None:
+        self._controller = controller
 
     def showMessage(self, message: str) -> None:
-        pass
+        print(message)
 
     def askProposal(self) -> int:
-        pass
+        while True:
+            try:
+                return int(input("Votre proposition : "))
+            except ValueError:
+                print("Veuillez entrer un nombre entier.")
