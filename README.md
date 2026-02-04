@@ -4,8 +4,8 @@
 
 ## Binôme
 
-- Nom Prénom - pseudo github
-- Nom Prénom - pseudo github
+- Richard Mathias - MathiasRch
+- Poublanc Tom - poublantom-max
 
 ## Sujet
 
